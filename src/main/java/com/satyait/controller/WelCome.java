@@ -8,7 +8,7 @@ public class WelCome {
 	
 	@GetMapping("/show")
 	public String show() {
-		return "WelCome To Satya-IT";
+		return "WELCOME TO SATYA-IT";
 	}
 
 }
