@@ -1,0 +1,9 @@
+#FROM <image>
+FROM openjdk:8
+# Temp Run location
+VOLUME /tmp
+EXPOSE 8080	
+#Jar Location to mapping name
+ADD target/DockerTestings-0.0.1.jar DockerTestings-0.0.1.jar
+#Jar Execution command
+ENTRYPOINT ["java","-jar","/DockerTestings-0.0.1.jar"]
