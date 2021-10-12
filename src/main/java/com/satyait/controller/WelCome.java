@@ -11,4 +11,9 @@ public class WelCome {
 		return "WELCOME TO WILKEF-CLASSES";
 	}
 
+	@GetMapping("/getData")
+	public String getData(){
+		return "get All Data";
+	}
+
 }
